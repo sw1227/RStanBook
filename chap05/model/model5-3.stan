@@ -24,6 +24,7 @@ model {
 }
 
 generated quantities {
+  // 予測分布。MCMCの各ステップで計算されるので、これもパラメータと同様に分布になる
   real y_pred[N];
   for (n in 1:N)
     y_pred[n] = normal_rng(mu[n], sigma);

@@ -7,6 +7,7 @@ data {
 }
 
 parameters {
+  // 配列にしている
   real b[4];
 }
 
